@@ -1,0 +1,287 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1f3f4;
+    color: #202124;
+}
+
+/* Main Container */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Header and Titles */
+h1, h2 {
+    font-size: 24px;
+    color: #202124;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1a73e8;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+}
+
+.search-bar button:hover {
+    background-color: #0c63d6;
+}
+
+/* Contact List */
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.contact-item:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.contact-item span {
+    font-size: 16px;
+    color: #202124;
+}
+
+.contact-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-actions a {
+    text-decoration: none;
+    color: #1a73e8;
+    font-weight: 500;
+}
+
+.contact-actions a:hover {
+    color: #0c63d6;
+}
+
+.contact-actions button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #ffffff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-actions button:hover {
+    background-color: #ffffff;
+}
+
+/* Add Contact Link */
+.add-contact {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1a73e8;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.add-contact:hover {
+    background-color: #0c63d6;
+}
+/* Three-dot button styling */
+.contact-menu-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Dots styling */
+.contact-menu-button::before {
+    content: "⋮";
+    font-size: 24px;
+    color: #5f6368;
+    transition: color 0.3s ease;
+}
+
+.contact-menu-button:hover::before {
+    color: #202124;
+}
+
+/* Dropdown menu styling */
+.contact-menu {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1;
+}
+
+.contact-menu a,
+.contact-menu button {
+    background: transparent;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    text-align: left;
+    font-size: 14px;
+    padding: 5px 10px;
+    width: 100%;
+}
+
+.contact-menu button {
+    color: #000000;
+}
+
+.contact-menu a:hover,
+.contact-menu button:hover {
+    background-color: #f1f3f4;
+}
+
+/* Show menu */
+.show-menu {
+    display: flex;
+}
+/* Contact Item */
+.contact-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    position: relative; /* Ensure dropdown is positioned relative to this item */
+}
+
+/* Dropdown menu styling */
+.contact-menu {
+    position: absolute; /* Positioning relative to the nearest positioned ancestor */
+    right: 0; /* Align the dropdown to the right of the contact item */
+    top: 40px; /* Adjust this value to position below the three dots */
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px;
+    display: none; /* Initially hidden */
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1; /* Ensure it appears above other elements */
+}
+
+/* Show menu */
+.show-menu {
+    display: flex; /* Show the dropdown */
+}
+/* Container for the Edit Contact page */
+.edit-contact-container {
+    max-width: 500px; /* Limit width to create a focused layout */
+    margin: 50px auto; /* Center the container */
+    padding: 20px; /* Add padding for spacing */
+    background-color: #ffffff; /* White background for a clean look */
+    border-radius: 8px; /* Rounded corners for softness */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Form styles */
+.edit-contact-form {
+    display: flex;
+    flex-direction: column; /* Stack input fields vertically */
+    gap: 15px; /* Space between input fields */
+}
+
+/* Input field styles */
+.input-field {
+    padding: 10px; /* Add padding for touch targets */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Consistent font size */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.input-field:focus {
+    outline: none; /* Remove default outline */
+    border-color: #1a73e8; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(26, 115, 232, 0.5); /* Light shadow for focus */
+}
+
+/* Submit button styles */
+.submit-button {
+    padding: 10px; /* Padding for the button */
+    background-color: #1a73e8; /* Primary color for the button */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Consistent font size */
+    cursor: pointer; /* Pointer cursor for interactive element */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.submit-button:hover {
+    background-color: #0c57b7; /* Darker shade on hover */
+}
+
+h2 {
+    color: #202124; /* Dark text color for the header */
+    margin-bottom: 20px; /* Space below the header */
+    font-weight: normal; /* Normal font weight for subtlety */
+    text-align: center; /* Center align the header */
+}

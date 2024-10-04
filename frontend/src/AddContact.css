@@ -1,0 +1,60 @@
+/* AddContact Styles */
+.add-contact-container {
+    max-width: 500px; /* Limit width for better readability */
+    margin: 50px auto; /* Center the container */
+    padding: 20px; /* Add padding for spacing */
+    background-color: #ffffff; /* White background for a clean look */
+    border-radius: 8px; /* Rounded corners for softness */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h2 {
+    color: #202124; /* Dark text color for the header */
+    margin-bottom: 20px; /* Space below the header */
+    font-weight: normal; /* Normal font weight for subtlety */
+    text-align: center; /* Center align the header */
+}
+
+/* Form styles */
+.add-contact-form {
+    display: flex;
+    flex-direction: column; /* Stack input fields vertically */
+    gap: 15px; /* Space between input fields */
+}
+
+/* Input field styles */
+.input-field {
+    padding: 10px; /* Add padding for touch targets */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Consistent font size */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.input-field:focus {
+    outline: none; /* Remove default outline */
+    border-color: #1a73e8; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(26, 115, 232, 0.5); /* Light shadow for focus */
+}
+
+/* Submit button styles */
+.submit-button {
+    padding: 10px; /* Padding for the button */
+    background-color: #1a73e8; /* Primary color for the button */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Consistent font size */
+    cursor: pointer; /* Pointer cursor for interactive element */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.submit-button:hover {
+    background-color: #0c57b7; /* Darker shade on hover */
+}
+
+/* Form group styles */
+.form-group {
+    display: flex;
+    flex-direction: column; /* Stack label and input vertically */
+}
